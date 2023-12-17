@@ -1,0 +1,137 @@
+@import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Koulen', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $mainColor;
+    background-color: $bgColor;
+}
+
+a {
+    color: $headerColor;
+}
+
+.container {
+    margin: 0 auto;
+    padding: $containerPadding;
+    max-width: $maxWidthContainer;
+}
+
+.container-test {
+    margin: 0 auto;
+    padding: $containerPadding;
+    max-width: $maxWidthContainerTest;
+}
+
+.active::before {
+    position: absolute;
+    content: '';
+    bottom: -6px;
+    left: 1.875rem;
+    width: calc(100% - 1.875rem);
+
+    border-bottom: 4px solid #fff;
+}
+
+.article {
+    .article__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+
+        max-width: 820px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+
+        iframe {
+            max-width: 800px;
+        }
+    }
+}
+
+.button {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1.6875rem 2.625rem;
+    background-color: $accentColor;
+    border-radius: 1.5625rem;
+
+    font-size: 1.9375rem;
+    font-weight: 600;
+
+    transition: background-color 0.4s ease;
+
+    &:hover {
+        background-color: #df941c;
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+.logo {
+    max-width: 7.75rem;
+
+    a {
+        color: $accentColor;
+    }
+
+    font-family: $fontFamilyLogo;
+    font-size: 1.75rem;
+}
+
+.title {
+    background-color: $footerBg;
+    color: $accentColor;
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center;
+
+    padding: 4.5625rem 0;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 36.625rem;
+    margin: 0 auto;
+
+    text-align: justify;
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    p:not(:last-child) {
+        margin-bottom: 27px;
+    }
+
+}
+
+.section__wrapper {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    max-width: $maxWidthContainer;
+
+    background-color: $headerColor;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.4375rem 0;
+
+    color: $footerColor;
+    font-weight: 600;
+    background-color: $accentColor;
+}

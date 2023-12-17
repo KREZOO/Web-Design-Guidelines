@@ -1,0 +1,14 @@
+//@import '../assets/fonts/style.css';
+
+@import './base/mixins'; // Миксины
+@import './base/reset'; // Сброс стилей
+@import './base/icons'; // Иконочные шрифты
+@import './base/vars.scss'; // Переменные
+@import './base/base'; // Общие стили
+
+// Блоки
+@import './blocks/header';
+@import './blocks/footer';
+@import './blocks/advantages';
+@import './blocks/purpose';
+@import './blocks/contents';

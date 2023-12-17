@@ -1,0 +1,14 @@
+.advantages {
+    .advantages__text-block {
+        font-size: 1rem;
+
+        & p {
+            margin: 0;
+        }
+
+        & ol {
+            list-style-position: inside;
+            margin-left: 0.5rem;
+        }
+    }
+}

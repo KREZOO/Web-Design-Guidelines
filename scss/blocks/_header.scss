@@ -1,0 +1,95 @@
+@import '../base/vars';
+
+.header {
+    background-image: url(../../img/header/header-bg.jpg);
+    background-size: cover;
+    aspect-ratio: 1920 / 794;
+    @include retina-bg(url(../../img/header/header-bg@2x.jpg));
+
+    .header__container {
+        display: flex;
+        column-gap: 3.875rem;
+        justify-content: space-between;
+
+        max-width: $maxWidthHeaderContainer;
+        padding-top: 3.125rem;
+        margin: 0 auto;
+
+        .nav {
+            color: $headerColor;
+            font-size: 1.125rem;
+            font-weight: 700;
+
+            .nav__list {
+                display: flex;
+                column-gap: 2.5rem;
+
+                .nav__list-item {
+
+                    min-width: 17.5rem;
+                    height: fit-content;
+                    padding: 2.5rem 0;
+                    text-align: center;
+
+                    border-radius: 0.5rem;
+
+                    transition: background-color 1s ease;
+
+                    &:hover {
+                        background-color: $accentColor;
+                    }
+                }
+
+                .dropdown {
+                    position: relative;
+
+                    min-height: 6.25rem;
+                    padding-bottom: 0;
+
+                    &:hover {
+                        background-color: $accentColor;
+
+                        .dropdown-menu {
+                            opacity: 1;
+                            visibility: inherit;
+                            height: 100%;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        visibility: hidden;
+                        height: 0;
+                        opacity: 0;
+                        font-size: 0.75rem;
+
+                        transition: opacity 1s ease, height 1s ease;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+
+                        & li {
+                            padding-left: 0.75rem;
+                            text-align: left;
+                        }
+
+                        .dropdown-menu__title {
+                            margin-bottom: 1rem;
+                        }
+
+                        .dropdown-menu__title:first-child {
+                            margin-top: 1.4375rem;
+                        }
+
+                        .dropdown-menu__item {
+                            position: relative;
+                            width: fit-content;
+                            margin-bottom: 1rem;
+                            padding-left: 1.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

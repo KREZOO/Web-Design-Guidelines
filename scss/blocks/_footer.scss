@@ -1,0 +1,45 @@
+@import '../base/vars';
+
+.footer {
+    position: relative;
+
+    padding: 3.9375rem 0;
+
+    background-color: $footerBg;
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 75.3125rem;
+        margin: 0 auto;
+
+        .footer__menu {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: space-between;
+
+            width: 54.0625rem;
+
+            .menu-list {
+
+                .menu-list__item {
+                    color: $headerColor;
+                    font-size: $fontSize;
+
+                    &:nth-child(1) {
+                        color: $accentColor;
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 2.0625rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

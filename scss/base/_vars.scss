@@ -1,0 +1,27 @@
+// Fonts / Шрифты
+$fontFamily: 'Poppins', sans-serif;
+$fontFamilyLogo: 'Koulen', sans-serif;
+$fontFamilyCopy: 'Roboto', sans-serif;
+
+// Font-size
+$fontSize: 16px;
+
+// Colors / Цвета
+$mainColor: #000000;
+$accentColor: #FCA311;
+
+$bgColor: #E5E5E5;
+
+$headerColor: #FFFFFF;
+
+$footerColor: #FFFFFF;
+$footerBg: #14213D;
+
+// Setting up an adaptive grid / Настройка адаптивной сетки
+//$minWidth: 320px;
+//$maxWidth: 1920px;
+
+$maxWidthContainer: 1470px;
+$maxWidthContainerTest: 820px;
+$maxWidthHeaderContainer: 1420px;
+$containerPadding: 0 15px;

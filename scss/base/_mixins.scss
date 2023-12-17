@@ -1,0 +1,10 @@
+@import 'vars';
+
+// mixin retina for background-image
+@mixin retina-bg($imageUrl) {
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        background-image: $imageUrl;
+    }
+}
