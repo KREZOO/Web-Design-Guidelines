@@ -10,6 +10,16 @@ function getPages() {
         const name = page.replace('.html', '');
         input[name] = resolve(pagesDir, page);
     }
+
+    // Добавляем index.html в качестве одной из точек входа
+    input['index'] = resolve(process.cwd(), 'index.html');
+
+    // Добавляем остальные страницы
+    for (const page of pages) {
+        const name = page.replace('.html', '');
+        input[name] = resolve(pagesDir, page);
+    }
+
     return input;
 }
 
