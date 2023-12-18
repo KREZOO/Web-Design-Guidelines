@@ -1,9 +1,14 @@
 .contents {
     .text-block {
-        max-width: 65.625rem;
+        max-width: 1050px;
+    }
+
+    .section__wrapper {
+        max-width: 90rem;
     }
 
     .contents__text-block {
+        padding: 3.125rem 0;
 
         p+ul,
         ul+p,
