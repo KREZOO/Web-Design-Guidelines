@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist --repo https://github.com/KREZOO/Web-Design-Guidelines.git",
     "build": "vite build",
     "preview": "vite preview"
   },
