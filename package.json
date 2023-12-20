@@ -8,8 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rimraf dist/materials"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "gh-pages": "^6.1.0",
